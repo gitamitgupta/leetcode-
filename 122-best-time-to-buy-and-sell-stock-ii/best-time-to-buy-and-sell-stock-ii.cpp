@@ -8,7 +8,7 @@ public:
         profit= max(-arr[idx]+ helper(arr,idx+1,0,dp),0+helper(arr,idx+1,1,dp));
         }
         else {
-              profit= max(arr[idx]+helper(arr,idx,1,dp), 0+helper(arr,idx+1,0,dp));
+              profit= max(arr[idx]+helper(arr,idx+1,1,dp), 0+helper(arr,idx+1,0,dp));
         }
 
         return dp[idx][buy]=profit;
