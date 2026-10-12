@@ -42,8 +42,10 @@ public:
             temp2=temp2->next;
             }
         }
-        if(carry !=0) {ListNode* tempk =new ListNode(carry);
-        c->next= tempk;}
+        if(carry !=0) {
+            ListNode* tempk =new ListNode(carry);
+        c->next= tempk;
+        }
         return dumm->next;
     }
 };
